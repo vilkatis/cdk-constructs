@@ -79,7 +79,7 @@
   "devDependencies": {
     "@types/html-minifier": "^4.0.1",
     "@types/js-beautify": "^1.13.3",
-    "jest-cdk-snapshot": "^1.4.2"
+    "jest-cdk-snapshot": "^2.0.1"
   },
   "publishConfig": {
     "access": "public"

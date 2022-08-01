@@ -3577,6 +3577,21 @@ available-typed-arrays@^1.0.5:
   resolved "https://registry.yarnpkg.com/available-typed-arrays/-/available-typed-arrays-1.0.5.tgz#92f95616501069d07d10edb2fc37d3e1c65123b7"
   integrity sha512-DMD0KiN46eipeziST1LPP/STfDU0sufISXmjSgvVsoU2tqxctQeASejWcfNtxYKqETM1UxQ8sp2OrSBWpHY6sw==
 
+aws-cdk-lib@^2.3.0:
+  version "2.3.0"
+  resolved "https://selinarnd-020457103146.d.codeartifact.us-east-1.amazonaws.com:443/npm/selinarnd/aws-cdk-lib/-/aws-cdk-lib-2.3.0.tgz#9592e51f51d012e1e56f851700d1b8e9687eee93"
+  integrity sha512-fVQ7x+ahOmzcy5KCw+EaYp0II3igglJSpi/Rs4OyLrCxa7GBZ4G9iDu0IAPKjppw5IX3UshklmdfkEFP8d1b9w==
+  dependencies:
+    "@balena/dockerignore" "^1.0.2"
+    case "1.6.3"
+    fs-extra "^9.1.0"
+    ignore "^5.1.9"
+    jsonschema "^1.4.0"
+    minimatch "^3.0.4"
+    punycode "^2.1.1"
+    semver "^7.3.5"
+    yaml "1.10.2"
+
 aws-cdk@^1.134.0:
   version "1.135.0"
   resolved "https://registry.yarnpkg.com/aws-cdk/-/aws-cdk-1.135.0.tgz#b997b33ecf2109bf6286c6eefff37bf125fc78d9"
@@ -3627,6 +3642,21 @@ aws-sdk@^2.1035.0, aws-sdk@^2.848.0, aws-sdk@^2.979.0:
   version "2.1046.0"
   resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.1046.0.tgz#9147b0fa1c86acbebd1a061e951ab5012f4499d7"
   integrity sha512-ocwHclMXdIA+NWocUyvp9Ild3/zy2vr5mHp3mTyodf0WU5lzBE8PocCVLSWhMAXLxyia83xv2y5f5AzAcetbqA==
+  dependencies:
+    buffer "4.9.2"
+    events "1.1.1"
+    ieee754 "1.1.13"
+    jmespath "0.15.0"
+    querystring "0.2.0"
+    sax "1.2.1"
+    url "0.10.3"
+    uuid "3.3.2"
+    xml2js "0.4.19"
+
+aws-sdk@^2.1048.0:
+  version "2.1048.0"
+  resolved "https://selinarnd-020457103146.d.codeartifact.us-east-1.amazonaws.com:443/npm/selinarnd/aws-sdk/-/aws-sdk-2.1048.0.tgz#02f2f35e0f51dd4510462e05c7a48fd4649d33f8"
+  integrity sha512-mVwWo+Udiuc/yEZ/DgJQGqOEtfiQjgUdtshx/t6ISe3+jW3TF9hUACwADwx2Sr/fuJyyJ3QD5JYLt5Cw35wQpA==
   dependencies:
     buffer "4.9.2"
     events "1.1.1"
@@ -8266,6 +8296,13 @@ jest-cdk-snapshot@^1.4.2:
   version "1.4.2"
   resolved "https://registry.yarnpkg.com/jest-cdk-snapshot/-/jest-cdk-snapshot-1.4.2.tgz#b6532a26ee345232bea40ec4f93d02a4a03f712e"
   integrity sha512-VbY2j/w6tOUxAFeR1fyG+ev/CBvGjfM9ju/Z8V/1yGy5BSVpwJtY3fg/F6w4EJOVu+8Etelkv7wRPv+qLSL68A==
+  dependencies:
+    js-yaml "^3.13.1"
+
+jest-cdk-snapshot@^2.0.1:
+  version "2.0.1"
+  resolved "https://selinarnd-020457103146.d.codeartifact.us-east-1.amazonaws.com:443/npm/selinarnd/jest-cdk-snapshot/-/jest-cdk-snapshot-2.0.1.tgz#1e92e1ac06e13e515981014a81d083d6e5f60dab"
+  integrity sha512-bj0NwurGSEOIbiwPJmvF/uMQF1DsFVkxCilV221Lmv9VWlngEEZ3ql0PeH4jKB0zyP8xCf6UHwRPe4aFBzuabQ==
   dependencies:
     js-yaml "^3.13.1"
 

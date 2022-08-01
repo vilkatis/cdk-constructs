@@ -1,8 +1,9 @@
 import * as path from 'path';
-import { IUserPool } from '@aws-cdk/aws-cognito';
-import { PolicyStatement, Effect } from '@aws-cdk/aws-iam';
-import { Code, SingletonFunction, Runtime } from '@aws-cdk/aws-lambda';
-import { Construct, CustomResource } from '@aws-cdk/core';
+import { IUserPool } from 'aws-cdk-lib/aws-cognito';
+import { PolicyStatement, Effect } from 'aws-cdk-lib/aws-iam';
+import { Code, SingletonFunction, Runtime } from 'aws-cdk-lib/aws-lambda';
+import { CustomResource } from 'aws-cdk-lib';
+import { Construct } from 'constructs';
 
 export interface UserPoolDomainProps {
   readonly userPool: IUserPool;

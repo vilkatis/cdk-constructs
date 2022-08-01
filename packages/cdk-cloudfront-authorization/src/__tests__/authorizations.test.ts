@@ -1,6 +1,6 @@
 import 'jest-cdk-snapshot';
-import { UserPool } from '@aws-cdk/aws-cognito';
-import { App, Stack } from '@aws-cdk/core';
+import { UserPool } from 'aws-cdk-lib/aws-cognito';
+import { App, Stack } from 'aws-cdk-lib';
 
 import { SpaAuthorization, StaticSiteAuthorization } from '../authorizations';
 

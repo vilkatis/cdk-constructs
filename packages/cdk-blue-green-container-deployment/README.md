@@ -26,21 +26,22 @@ pip install cloudcomponents.cdk-blue-green-container-deployment
 ## How to use
 
 ```typescript
-import { Construct, Duration, Stack, StackProps } from '@aws-cdk/core';
-import { Repository } from '@aws-cdk/aws-codecommit';
-import { Pipeline, Artifact } from '@aws-cdk/aws-codepipeline';
-import { Vpc, Port } from '@aws-cdk/aws-ec2';
-import { Cluster } from '@aws-cdk/aws-ecs';
+import { Duration, Stack, StackProps } from 'aws-cdk-lib';
+import { Construct } from 'constructs';
+import { Repository } from 'aws-cdk-lib/aws-codecommit';
+import { Pipeline, Artifact } from 'aws-cdk-lib/aws-codepipeline';
+import { Vpc, Port } from 'aws-cdk-lib/aws-ec2';
+import { Cluster } from 'aws-cdk-lib/aws-ecs';
 import {
   ApplicationLoadBalancer,
   ApplicationTargetGroup,
   TargetType,
-} from '@aws-cdk/aws-elasticloadbalancingv2';
+} from 'aws-cdk-lib/aws-elasticloadbalancingv2';
 import {
   CodeBuildAction,
   CodeCommitSourceAction,
   CodeDeployEcsDeployAction,
-} from '@aws-cdk/aws-codepipeline-actions';
+} from 'aws-cdk-lib/aws-codepipeline-actions';
 
 import { ImageRepository } from '@cloudcomponents/cdk-container-registry';
 import {

@@ -28,8 +28,9 @@ pip install cloudcomponents.cdk-cloudfront-authorization
 ## How to use SPA
 
 ```typescript
-import { Construct, Stack, StackProps } from '@aws-cdk/core';
-import { UserPool } from '@aws-cdk/aws-cognito';
+import { Stack, StackProps } from 'aws-cdk-lib';
+import { Construct } from 'constructs';
+import { UserPool } from 'aws-cdk-lib/aws-cognito';
 import {
   SpaAuthorization,
   SpaDistribution,
@@ -66,8 +67,9 @@ export class CloudFrontAuthorizationStack extends Stack {
 ## How to use StaticSite
 
 ```typescript
-import { Construct, Stack, StackProps } from '@aws-cdk/core';
-import { UserPool } from '@aws-cdk/aws-cognito';
+import { Stack, StackProps } from 'aws-cdk-lib';
+import { Construct } from 'constructs';
+import { UserPool } from 'aws-cdk-lib/aws-cognito';
 import {
   StaticSiteAuthorization,
   StaticSiteDistribution,
@@ -104,10 +106,11 @@ export class CloudFrontAuthorizationStack extends Stack {
 ## Legacy CloudFrontWebDistribution
 
 ```typescript
-import { CloudFrontWebDistribution, OriginAccessIdentity } from '@aws-cdk/aws-cloudfront';
-import { UserPool } from '@aws-cdk/aws-cognito';
-import { Bucket } from '@aws-cdk/aws-s3'
-import { Construct, Stack, StackProps, RemovalPolicy } from '@aws-cdk/core';
+import { CloudFrontWebDistribution, OriginAccessIdentity } from 'aws-cdk-lib/aws-cloudfront';
+import { UserPool } from 'aws-cdk-lib/aws-cognito';
+import { Bucket } from 'aws-cdk-lib/aws-s3'
+import { Stack, StackProps, RemovalPolicy } from 'aws-cdk-lib';
+import { Construct } from 'aws-cdk-lib';
 import { SpaAuthorization } from '@cloudcomponentscdk-cloudfront-authorization';
 
 export class CloudFrontAuthorizationStack extends Stack {

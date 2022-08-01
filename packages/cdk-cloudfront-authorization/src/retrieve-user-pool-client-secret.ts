@@ -1,6 +1,6 @@
-import { IUserPool, IUserPoolClient } from '@aws-cdk/aws-cognito';
-import { Construct } from '@aws-cdk/core';
-import { AwsCustomResource, AwsCustomResourcePolicy, PhysicalResourceId } from '@aws-cdk/custom-resources';
+import { IUserPool, IUserPoolClient } from 'aws-cdk-lib/aws-cognito';
+import { Construct } from 'constructs';
+import { AwsCustomResource, AwsCustomResourcePolicy, PhysicalResourceId } from 'aws-cdk-lib/custom-resources';
 
 export interface RetrieveUserPoolClientSecretProps {
   readonly userPoolClient: IUserPoolClient;

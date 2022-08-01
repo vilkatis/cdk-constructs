@@ -1,6 +1,6 @@
-import { IOrigin, Behavior, BehaviorOptions, AddBehaviorOptions, ViewerProtocolPolicy, OriginRequestPolicy } from '@aws-cdk/aws-cloudfront';
-import { OAuthScope, UserPoolClientIdentityProvider, IUserPool, IUserPoolClient } from '@aws-cdk/aws-cognito';
-import { Construct } from '@aws-cdk/core';
+import { IOrigin, Behavior, BehaviorOptions, AddBehaviorOptions, ViewerProtocolPolicy, OriginRequestPolicy } from 'aws-cdk-lib/aws-cloudfront';
+import { OAuthScope, UserPoolClientIdentityProvider, IUserPool, IUserPoolClient } from 'aws-cdk-lib/aws-cognito';
+import { Construct } from 'constructs';
 import { LogLevel } from '@cloudcomponents/cdk-lambda-at-edge-pattern';
 
 import { AuthFlow, RedirectPaths } from './auth-flow';

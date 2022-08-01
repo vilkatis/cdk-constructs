@@ -25,13 +25,14 @@ pip install cloudcomponents.cdk-chatops
 ## How to use
 
 ```typescript
-import { Construct, Stack, StackProps } from '@aws-cdk/core';
-import { Repository } from '@aws-cdk/aws-codecommit';
-import { Pipeline, Artifact } from '@aws-cdk/aws-codepipeline';
+import { Stack, StackProps } from 'aws-cdk-lib';
+import { Construct} from 'constructs';
+import { Repository } from 'aws-cdk-lib/aws-codecommit';
+import { Pipeline, Artifact } from 'aws-cdk-lib/aws-codepipeline';
 import {
   CodeCommitSourceAction,
   ManualApprovalAction,
-} from '@aws-cdk/aws-codepipeline-actions';
+} from 'aws-cdk-lib/aws-codepipeline-actions';
 import {
   RepositoryNotificationRule,
   PipelineNotificationRule,

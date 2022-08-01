@@ -1,5 +1,6 @@
-import { CfnDeploymentConfig } from '@aws-cdk/aws-codedeploy';
-import { Aws, Construct, IResolvable, Resource } from '@aws-cdk/core';
+import { CfnDeploymentConfig } from 'aws-cdk-lib/aws-codedeploy';
+import { Aws, IResolvable, Resource } from 'aws-cdk-lib';
+import { Construct } from 'constructs';
 
 export interface IEcsDeploymentConfig {
   readonly deploymentConfigName: string;

@@ -1,6 +1,7 @@
 import * as path from 'path';
-import { Code, SingletonFunction, Runtime } from '@aws-cdk/aws-lambda';
-import { Construct, CustomResource } from '@aws-cdk/core';
+import { Code, SingletonFunction, Runtime } from 'aws-cdk-lib/aws-lambda';
+import { CustomResource } from 'aws-cdk-lib';
+import { Construct } from 'constructs';
 
 export interface SecretGeneratorProps {
   readonly length?: number;

@@ -1,6 +1,6 @@
-import { IUserPoolClient, IUserPool, OAuthScope, UserPoolClientIdentityProvider } from '@aws-cdk/aws-cognito';
-import { Construct } from '@aws-cdk/core';
-import { AwsCustomResource, AwsCustomResourcePolicy, PhysicalResourceId } from '@aws-cdk/custom-resources';
+import { IUserPoolClient, IUserPool, OAuthScope, UserPoolClientIdentityProvider } from 'aws-cdk-lib/aws-cognito';
+import { Construct } from 'constructs';
+import { AwsCustomResource, AwsCustomResourcePolicy, PhysicalResourceId } from 'aws-cdk-lib/custom-resources';
 
 export interface UserPoolClientRedirectsProps {
   readonly userPoolClient: IUserPoolClient;

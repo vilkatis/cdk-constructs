@@ -1,8 +1,8 @@
 import * as path from 'path';
-import { LambdaEdgeEventType } from '@aws-cdk/aws-cloudfront';
-import { IUserPool, IUserPoolClient, OAuthScope } from '@aws-cdk/aws-cognito';
-import { Code } from '@aws-cdk/aws-lambda';
-import { Construct } from '@aws-cdk/core';
+import { LambdaEdgeEventType } from 'aws-cdk-lib/aws-cloudfront';
+import { IUserPool, IUserPoolClient, OAuthScope } from 'aws-cdk-lib/aws-cognito';
+import { Code } from 'aws-cdk-lib/aws-lambda';
+import { Construct } from 'constructs';
 import { EdgeFunction, HttpHeaders, LogLevel, EdgeRole } from '@cloudcomponents/cdk-lambda-at-edge-pattern';
 
 export interface RedirectPaths {

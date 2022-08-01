@@ -96,8 +96,8 @@
     "@aws-cdk/core": "^1.134.0"
   },
   "devDependencies": {
-    "@aws-cdk/assert": "^1.134.0",
-    "jest-cdk-snapshot": "^1.4.2"
+    "@aws-cdk/assert": "^2.3.0",
+    "jest-cdk-snapshot": "^2.0.1"
   },
   "publishConfig": {
     "access": "public"

@@ -90,8 +90,8 @@
     "@cloudcomponents/cdk-chatops": "^1.48.0"
   },
   "devDependencies": {
-    "@aws-cdk/assert": "^1.134.0",
-    "jest-cdk-snapshot": "^1.4.2"
+    "@aws-cdk/assert": "^2.3.0",
+    "jest-cdk-snapshot": "^2.0.1"
   },
   "gitHead": "b1ac0776c6169c1ca4a1434cad09d99c0ecb41ab"
 }

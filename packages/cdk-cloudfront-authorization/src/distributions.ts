@@ -1,4 +1,4 @@
-import { ICertificate } from '@aws-cdk/aws-certificatemanager';
+import { ICertificate } from 'aws-cdk-lib/aws-certificatemanager';
 import {
   IOrigin,
   IDistribution,
@@ -10,10 +10,11 @@ import {
   BehaviorOptions,
   CachePolicy,
   SecurityPolicyProtocol,
-} from '@aws-cdk/aws-cloudfront';
-import { S3Origin } from '@aws-cdk/aws-cloudfront-origins';
-import { Bucket, IBucket } from '@aws-cdk/aws-s3';
-import { Construct, Duration, RemovalPolicy, Stack, ResourceEnvironment, CfnResource } from '@aws-cdk/core';
+} from 'aws-cdk-lib/aws-cloudfront';
+import { S3Origin } from 'aws-cdk-lib/aws-cloudfront-origins';
+import { Bucket, IBucket } from 'aws-cdk-lib/aws-s3';
+import { Duration, RemovalPolicy, Stack, ResourceEnvironment, CfnResource } from 'aws-cdk-lib';
+import { Construct } from 'constructs';
 
 import { IAuthorization, IStaticSiteAuthorization, ISpaAuthorization } from './authorizations';
 
